@@ -43,7 +43,8 @@ body {
   border-bottom: var(--line);
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  border-bottom: 1px solid var(--color-grey-light-2); }
 
 .content {
   display: flex; }
@@ -56,7 +57,6 @@ body {
   justify-content: space-between; }
 
 .hotel-view {
-  background-color: orangered;
   height: 80rem;
   flex: 1; }
 
@@ -189,3 +189,76 @@ body {
   color: var(--color-grey-light-4);
   padding: 2.5rem;
   line-height: 1.9rem; }
+
+.gallery {
+  display: flex; }
+  .gallery__img {
+    width: 100%;
+    display: block; }
+
+.overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-grey-light-2);
+  background-color: white; }
+  .overview__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    padding: 2.5rem 3rem; }
+  .overview__stars {
+    margin-right: auto;
+    display: flex; }
+  .overview__location {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center; }
+  .overview__icon-star, .overview__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary); }
+  .overview__rating {
+    background-color: var(--color-primary);
+    color: #fff;
+    align-self: stretch;
+    padding: 0 2.25rem;
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .overview__rating-average {
+      font-size: 2.27rem;
+      font-weight: 300;
+      margin-bottom: .5rem; }
+    .overview__rating-count {
+      font-size: .8rem;
+      text-transform: uppercase; }
+
+.btn-inline {
+  border: none;
+  color: var(--color-primary);
+  border-bottom: 1px solid currentColor;
+  font-size: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  margin-left: .5rem;
+  line-height: 2rem; }
+  .btn-inline:hover {
+    color: var(--color-grey-dark-1); }
+  .btn-inline:focus {
+    outline: none;
+    animation: infiniteAnimation 1s infinite; }
+
+@keyframes infiniteAnimation {
+  0% {
+    transform: scale(1);
+    box-shadow: none; }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25); }
+  100% {
+    transform: scale(1);
+    box-shadow: none; } }

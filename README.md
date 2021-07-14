@@ -12,3 +12,6 @@ GRID: Flex<br>
 -:not(:last-of-type)<br>
 --webkit-mask-image<br>
 --webkit-mask-size<br>
+
+## Responsive
+- Responsive for 425px >= screen

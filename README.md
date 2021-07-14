@@ -14,4 +14,4 @@ GRID: Flex<br>
 --webkit-mask-size<br>
 
 ## Responsive
-- Responsive for 425px >= screen
+-Responsive for 425px >= screen
